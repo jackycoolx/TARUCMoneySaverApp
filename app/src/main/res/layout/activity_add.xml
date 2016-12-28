@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="my.edu.taruc.tarucmoneysaver.AddActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:id="@+id/imageLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:id="@+id/captureImageView"
+            android:layout_alignTop="@+id/captureImageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:minHeight="300dp"
+            android:minWidth="300dp"
+            android:contentDescription="@string/image_empty"
+            android:cropToPadding="false"
+            android:background="@drawable/image_show_require" />
+
+        <Button
+            android:id="@+id/captureImageButton"
+            android:background="@android:color/white"
+            android:textSize="60sp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/captureImageView"
+            android:layout_toEndOf="@+id/captureImageView"
+            android:onClick="launchCamera"
+            android:text="@string/plus_button_camera" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/foodNameEditText"
+        android:hint="@string/food_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/restaurantNameEditText"
+        android:hint="@string/rest_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/foodPriceEditText"
+        android:hint="@string/food_price" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/commentEditText"
+        android:hint="@string/com_ment" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout"
+        android:layout_weight="0.37">
+
+        <Button
+            android:text="@string/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButton"
+            android:layout_marginRight="64dp"
+            android:layout_marginEnd="64dp"
+            android:background="@android:color/holo_orange_light"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/submitButton"
+            android:layout_toStartOf="@+id/submitButton"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:onClick="cancelToMain" />
+
+        <Button
+            android:text="@string/add_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitButton"
+            android:layout_marginRight="78dp"
+            android:layout_marginEnd="78dp"
+            android:background="@android:color/holo_orange_light"
+            android:layout_alignBaseline="@+id/cancelButton"
+            android:layout_alignBottom="@+id/cancelButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

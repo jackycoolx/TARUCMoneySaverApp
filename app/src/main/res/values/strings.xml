@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TARUC Money Saver</string>
+    <string name="addContent_page">Add New Food Content</string>
+    <string name="list_page">Food List</string>
+    <string name="record_page">Expense Record</string>
+    <string name="food_name">Food Name</string>
+    <string name="rest_name">Restaurant Name</string>
+    <string name="food_price">Food Price</string>
+    <string name="com_ment">Comment...</string>
+    <string name="add_submit">Submit</string>
+    <string name="add_reset">Reset</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="calc_expense">Calculate</string>
+    <string name="plus_button_camera">+</string>
+    <string name="image_empty">Image</string>
+</resources>
