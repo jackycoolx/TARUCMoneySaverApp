@@ -11,4 +11,63 @@
     android:background="@android:color/white"
     tools:context="my.edu.taruc.tarucmoneysaver.listActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listToolbar" />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/backButtonList"
+        android:layout_alignParentLeft="false"
+        android:layout_height="35dp"
+        android:layout_marginTop="14dp"
+        android:onClick="backMain"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/back_button_list" />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:id="@+id/searchButtonList"
+        android:layout_alignBottom="@+id/backButtonList"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/search_button_list" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchButtonList"
+        android:layout_toLeftOf="@+id/searchButtonList"
+        android:id="@+id/editSearch"
+        android:layout_width="260dp"
+        android:inputType="text"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listToolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/showFoodView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scrollbars="vertical"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp" />
+
 </RelativeLayout>
